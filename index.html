@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf9f6">
+  <meta name="description" content="작은 호기심을 유용한 AI로 만드는 AI 엔지니어의 소개 페이지입니다.">
+  <title>Hello, AI · AI 엔지니어</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { color-scheme: light; }
+    body {
+      margin: 0;
+      background: #faf9f6;
+      color: #353440;
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 680px; margin: 0 auto; padding: 56px 28px 32px; }
+    header { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 15px; font-weight: 800; letter-spacing: -.5px; }
+    .hello { padding: 7px 12px; border-radius: 20px; background: #eee7fb; font-size: 11px; color: #716184; }
+    .intro { padding: 76px 0 46px; }
+    .avatar {
+      display: grid; place-items: center; width: 72px; height: 72px;
+      margin-bottom: 25px; border-radius: 25px; background: #fff0bb;
+      font-size: 33px; transform: rotate(-5deg);
+    }
+    .eyebrow { margin: 0 0 14px; color: #8a7ba2; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    h1 { margin: 0; font-size: clamp(28px, 6.3vw, 39px); line-height: 1.5; letter-spacing: -1.8px; font-weight: 750; }
+    h1 span { background: linear-gradient(transparent 62%, #e8def8 62%); }
+    .description { margin: 22px 0 0; font-size: 14px; color: #827f89; line-height: 1.95; word-break: keep-all; }
+    .details { border-top: 1px solid #e8e5e8; padding: 28px 0; }
+    .row { display: grid; grid-template-columns: 100px 1fr; gap: 18px; align-items: baseline; }
+    .row + .row { margin-top: 26px; }
+    h2 { margin: 0; font-size: 12px; font-weight: 600; color: #8e8996; }
+    .row p { margin: 0; font-size: 13px; line-height: 1.8; word-break: keep-all; }
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 0; padding: 0; list-style: none; }
+    .tags li { padding: 6px 11px; border-radius: 8px; font-size: 11px; line-height: 1.5; }
+    .yellow { background: #fff0c2; color: #7d7046; }
+    .purple { background: #eee6fa; color: #78678d; }
+    .blue { background: #e1effb; color: #5e7b94; }
+    .note { margin: 16px 0 0; padding: 18px 20px; border-radius: 13px; background: #eaf2fa; color: #6d8294; font-size: 12px; line-height: 1.8; }
+    footer { margin-top: 52px; display: flex; justify-content: space-between; gap: 12px; color: #aaa5ad; font-size: 10px; }
+    @media (max-width: 440px) {
+      main { padding: 32px 24px 26px; }
+      .intro { padding-top: 56px; }
+      .row { grid-template-columns: 72px 1fr; gap: 12px; }
+      footer { margin-top: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="logo">hello, ai<span aria-hidden="true"> ✳</span></div>
+      <span class="hello">반가워요 👋</span>
+    </header>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="avatar" aria-hidden="true">👩‍💻</div>
+      <p class="eyebrow">AI ENGINEER</p>
+      <h1 id="intro-title">작은 호기심을<br><span>유용한 AI</span>로.</h1>
+      <p class="description">안녕하세요, AI 엔지니어입니다.<br>데이터에서 실마리를 찾고, 일상에 도움이 되는 AI를 고민합니다.</p>
+    </section>
+
+    <section class="details" aria-label="관심 분야와 기술">
+      <div class="row">
+        <h2>관심 있는 것</h2>
+        <p>언어를 이해하는 AI, 그리고 더 편리한 일상.</p>
+      </div>
+      <div class="row">
+        <h2>기술 키워드</h2>
+        <ul class="tags" aria-label="AI 기술 키워드">
+          <li class="yellow">Python</li>
+          <li class="purple">Machine Learning</li>
+          <li class="blue">LLM</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="note">🌱 복잡한 문제도, 작은 실험 하나부터.</p>
+
+    <footer>
+      <span>조금씩 배우고, 꾸준히 만드는 중.</span>
+      <span aria-hidden="true">☁️</span>
+    </footer>
+  </main>
+</body>
+</html>
